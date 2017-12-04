@@ -6,12 +6,13 @@ public interface ArrayOperations {
 
     static double getAverage(int[] numbers) {
         IntStream.range(0, numbers.length)
-                .forEach(System.out::println);
+                .forEach(i -> {System.out.println(numbers[i]);
+                });
 
-        double average = IntStream.range(0, numbers.length)
+        return IntStream.range(0, numbers.length)
+                .map(i -> numbers[i])
                 .average().getAsDouble();
 
-        return average;
     }
 
     static double getAverage2(int[] numbers) {
