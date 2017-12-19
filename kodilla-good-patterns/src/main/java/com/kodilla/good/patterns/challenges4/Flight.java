@@ -31,7 +31,7 @@ public class Flight {
 
         if (!departureCity.equals(flight.departureCity)) return false;
         if (!arrivalCity.equals(flight.arrivalCity)) return false;
-        return viaCity != null ? viaCity.equals(flight.viaCity) : flight.viaCity == null;
+        return viaCity != null ? viaCity.equals(flight.viaCity) : false;
     }
 
     @Override
