@@ -33,5 +33,17 @@ public class FlightSearch {
         return flightsTo;
     }
 
+    public List<Flight> flightsVia(String city){
+        List<Flight> flightsVia = flightsList.getFlightsList().stream()
+                .filter(l -> l.getViaCity().equals(city))
+                .collect(Collectors.toList());
+
+        System.out.println("Via " + city + " you can go to: ");
+        for (Flight flight :flightsVia){
+            System.out.println(flight.getArrivalCity());
+        }
+
+        return flightsVia;
+    }
 
 }

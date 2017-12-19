@@ -9,12 +9,12 @@ public final class FlightsList {
     private final List<Flight> flights = new ArrayList<>();
 
     public FlightsList() {
-        flights.add(new Flight("Warszawa", "Poznań"));
-        flights.add(new Flight("Warszawa", "Wrocław"));
-        flights.add(new Flight("Warszawa", "Katowice"));
-        flights.add(new Flight("Kraków", "Szczecin"));
-        flights.add(new Flight("Poznań", "Wrocław"));
-        flights.add(new Flight("Poznań", "Lublin"));
+        flights.add(new Flight("Warszawa", "Poznań", null));
+        flights.add(new Flight("Warszawa", "Wrocław", null));
+        flights.add(new Flight("Warszawa", "Katowice", null));
+        flights.add(new Flight("Kraków", "Szczecin", null));
+        flights.add(new Flight("Poznań", "Wrocław", "Szczecin"));
+        flights.add(new Flight("Poznań", "Lublin", "Gdańsk"));
     }
 
     public List<Flight> getFlightsList() {

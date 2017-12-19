@@ -11,6 +11,7 @@ public class Application {
         String city = "Warszawa";
         flightSearch.flightsFrom(city);
         flightSearch.flightsTo("Wrocław");
+        flightSearch.flightsVia("Szczecin");
 
     }
 }
