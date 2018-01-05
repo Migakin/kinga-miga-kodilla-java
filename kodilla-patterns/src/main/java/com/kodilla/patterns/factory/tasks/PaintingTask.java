@@ -1,6 +1,6 @@
 package com.kodilla.patterns.factory.tasks;
 
-public class PaintingTask implements Tasks{
+public class PaintingTask implements Task{
     final String taskName;
     final String color;
     final String whatToPaint;
@@ -26,10 +26,8 @@ public class PaintingTask implements Tasks{
 
     @Override
     public boolean isTaskExecuted() {
-        if(processStatus){
-            return true;
-        }else {
-            return false;
+        return processStatus;
         }
     }
+
 }
